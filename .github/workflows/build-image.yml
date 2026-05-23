@@ -27,6 +27,8 @@ jobs:
         with:
           repository: ${{ env.UPSTREAM_REPO }}
           ref: ${{ env.UPSTREAM_BRANCH }}
+          token: ""
+          persist-credentials: false
 
       - name: Resolve upstream commit
         id: upstream
